@@ -89,6 +89,27 @@
                 bindings = <&kp MINUS>;  // -
                 key-positions = <13 15>;  // n b
             };
+            
+            combo_equal {
+                bindings = <&kp EQUAL>;  // =
+                key-positions = <3 4>;  // p .
+            };
+            
+            combo_plus {
+                bindings = <&kp TILDE>;  // + (日本語キーボードでは~)
+                key-positions = <31 32 33>;  // (left)(up)(down)
+            };
+            
+            combo_asterisk {
+                bindings = <&kp LPAR>;  // * (日本語キーボードでは()
+                key-positions = <11 6 9>;  // w e h
+            };
+            
+            combo_caret {
+                bindings = <&kp EQUAL>;  // ^
+                key-positions = <5 2 13>;  // r , n
+            };
+            
         };
 
     macros {
