@@ -44,6 +44,33 @@
                 key-positions = <23 24>;  // m x
             };
             
+            // 記号入力
+            combo_double_quote {
+                bindings = <&kp AT>;  // " (日本語キーボードでは@)
+                key-positions = <1 3>;  // l p
+            };
+            
+            combo_backtick {
+                bindings = <&kp LBRC>;  // ` (日本語キーボードでは{)
+                key-positions = <1 2>;  // l ,
+            };
+            
+            combo_single_quote {
+                bindings = <&kp CARET>;  // ' (日本語キーボードでは&)
+                key-positions = <2 3>;  // , p
+            };
+            
+            combo_hash {
+                bindings = <&kp HASH>;  // #
+                key-positions = <0 1>;  // (Esc) l
+            };
+            
+            combo_semicolon {
+                bindings = <&kp SEMICOLON>;  // ;
+                key-positions = <2 6>;  // , e
+            };
+            
+            
         };
 
     macros {
