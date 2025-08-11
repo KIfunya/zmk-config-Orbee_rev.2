@@ -71,7 +71,7 @@
             };
             
             combo_pipe {
-                bindings = <&kp PIPE>;  // |
+                bindings = <&pipe>;  // |
                 key-positions = <3 13>;  // p n
             };
             
@@ -81,7 +81,7 @@
             };
             
             combo_underscore {
-                bindings = <&kp UNDER>;  // _
+                bindings = <&under>;  // _
                 key-positions = <9 10>;  // h j
             };
             
@@ -109,7 +109,26 @@
                 bindings = <&kp EQUAL>;  // ^
                 key-positions = <5 2 13>;  // r , n
             };
-        
+            
+            combo_slash {
+                bindings = <&kp SLASH>;  // /
+                key-positions = <5 2>;  // r ,
+            };
+            
+            combo_backslash {
+                bindings = <&backslash>;  // \
+                key-positions = <2 13>;  // , n
+            };
+            
+            combo_left_paren {
+                bindings = <&kp ASTRK>;  // ( (日本語キーボードでは*)
+                key-positions = <7 17>;  // f u
+            };
+            
+            combo_right_paren {
+                bindings = <&kp LPAR>;  // ) (日本語キーボードでは()
+                key-positions = <7 17 18>;  // f u d
+            };
         };
 
     macros {
