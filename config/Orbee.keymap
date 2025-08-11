@@ -105,11 +105,23 @@
             label = "TO_LAYER_0";
         };
 
-        backspash: backspash {
+        backslash: backslash {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp NON_US_BACKSLASH>;
-            label = "BACKSPASH";
+            bindings = <&kp 0x89>;
+            label = "BACKSLASH";
+        };
+        pipe: pipe {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(0x89)>;
+            label = "PIPE";
+        };
+        rpar: rpar {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_PARENTHESIS>;
+            label = "RAPAR";
         };
     };
 
