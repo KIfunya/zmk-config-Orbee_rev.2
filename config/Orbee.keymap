@@ -70,7 +70,46 @@
                 key-positions = <2 6>;  // , e
             };
             
+            combo_pipe {
+                bindings = <&kp PIPE>;  // |
+                key-positions = <3 13>;  // p n
+            };
             
+            combo_colon {
+                bindings = <&kp PLUS>;  // : (日本語キーボードでは+)
+                key-positions = <4 15>;  // . b
+            };
+            
+            combo_underscore {
+                bindings = <&kp UNDER>;  // _
+                key-positions = <9 10>;  // h j
+            };
+            
+            combo_minus {
+                bindings = <&kp MINUS>;  // -
+                key-positions = <13 15>;  // n b
+            };
+            
+            combo_equal {
+                bindings = <&kp EQUAL>;  // =
+                key-positions = <3 4>;  // p .
+            };
+            
+            combo_plus {
+                bindings = <&kp TILDE>;  // + (日本語キーボードでは~)
+                key-positions = <31 32 33>;  // (left)(up)(down)
+            };
+            
+            combo_asterisk {
+                bindings = <&kp LPAR>;  // * (日本語キーボードでは()
+                key-positions = <11 6 9>;  // w e h
+            };
+            
+            combo_caret {
+                bindings = <&kp EQUAL>;  // ^
+                key-positions = <5 2 13>;  // r , n
+            };
+        
         };
 
     macros {
