@@ -234,8 +234,8 @@
         DEFAULT {
             bindings = <
 &kp ESC           &kp L     &kp COMMA  &kp P      &kp DOT                            &kp F        &kp U  &kp D  &kp K  &sl 2
-&kp A             &kp R     &kp E      &kp N      &kp B     &none        &kp G       &kp S        &kp I  &kp T  &kp O  &kp LBKT
-&mt LEFT_SHIFT Z  &kp W     &kp UP     &kp H      &kp J     &kp TAB      &kp V       &kp C        &kp Y  &kp M  &kp X  &kp RBKT
+&kp A             &kp R     &kp E      &kp N      &kp B     &none        &kp G       &kp S        &kp I  &kp T  &kp O  &kp RIGHT_BRACKET
+&mt LEFT_SHIFT Z  &kp W     &kp UP     &kp H      &kp J     &kp TAB      &kp V       &kp C        &kp Y  &kp M  &kp X  &kp BSLH
 &kp LGUI          &kp LEFT  &kp DOWN   &kp RIGHT  &kp LALT  &kp SPACE    &lt 1 BSPC  &lt 1 ENTER                       &kp LCTRL
             >;
 
