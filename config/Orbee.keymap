@@ -63,12 +63,12 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        DEFAULT {
             bindings = <
 &kp ESC    &kp L         &trans        &kp P             &trans                                       &kp F        &kp U  &kp D  &kp K  &trans
 &kp A      &kp R         &kp E         &kp N             &kp B             &none          &kp G       &kp S        &kp I  &kp T  &kp O  &trans
 &kp Z      &kp W         &trans        &kp H             &kp J             &lt 4 COLON    &kp V       &kp C        &kp Y  &kp M  &kp X  &trans
-&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &lt 1 INT_HENKAN  &kp INT_MUHENKAN  &kp SPACE      &lt 1 BSPC  &lt 1 ENTER                       &kp DEL
+&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &lt 1 INT_HENKAN  &kp INT_MUHENKAN  &kp SPACE      &lt 1 BSPC  &lt 1 ENTER                       &lt 4 DEL
             >;
 
             sensor-bindings =
@@ -76,7 +76,7 @@
                 <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
 
-        layer_1 {
+        MOVE {
             bindings = <
 &kp Q        &trans  &trans  &trans  &trans                              &trans     &kp UP    &trans     &trans   &trans
 &kp LA(TAB)  &trans  &trans  &trans  &trans  &trans            &kp HOME  &kp LEFT   &kp DOWN  &kp RIGHT  &kp END  &trans
@@ -114,29 +114,7 @@
 &trans  &trans  &trans  &trans  &trans                         &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
 &trans  &trans  &trans  &trans  &trans  &trans    &trans       &trans        &trans        &trans        &trans        &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &bootloader  &trans        &trans        &trans        &trans        &bt BT_CLR
-&trans  &trans  &trans  &trans  &trans  &trans    &trans       &trans                                                  &bt BT_CLR_ALL
-            >;
-
-            sensor-bindings = <&scroll_up_down>;
-        };
-
-        layer_5 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                          &trans
-            >;
-
-            sensor-bindings = <&scroll_up_down>;
-        };
-
-        MOUSE {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                                &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans       &trans                                                  &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
