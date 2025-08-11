@@ -161,10 +161,10 @@
 
         MOVE {
             bindings = <
-&mt LS(Q) Q  &trans  &trans  &kp LBKT  &kp RBKT                              &trans     &kp UP    &trans     &trans    &trans
-&trans       &trans  &trans  &kp LPAR  &kp RPAR  &trans            &kp HOME  &kp LEFT   &kp DOWN  &kp RIGHT  &kp END   &trans
-&kp LS(Z)    &trans  &trans  &trans    &trans    &trans            &mkp MB4  &mkp LCLK  &mkp MB3  &mkp RCLK  &mkp MB5  &trans
-&trans       &trans  &trans  &trans    &trans    &kp INT_HENKAN    &trans    &trans                                    &trans
+&mt LS(Q) Q  &trans  &trans  &kp LBKT  &kp RBKT                              &trans    &kp UP    &trans     &trans   &trans
+&trans       &trans  &trans  &kp LPAR  &kp RPAR  &trans            &kp HOME  &kp LEFT  &kp DOWN  &kp RIGHT  &kp END  &trans
+&kp LS(Z)    &trans  &trans  &trans    &trans    &trans            &trans    &kp BSPC  &kp DEL   &trans     &trans   &trans
+&trans       &trans  &trans  &trans    &trans    &kp INT_HENKAN    &trans    &trans                                  &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
