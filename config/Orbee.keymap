@@ -13,38 +13,6 @@
 };
 
 / {
-    combos {
-        compatible = "zmk,combos";
-        timeout-ms = <50>;
-        require-prior-idle-ms = <30>;
-
-        // マウス操作
-        combo_left_click {
-            bindings = <&mkp LCLK>;
-            key-positions = <12 14>;  // y c
-        };
-
-        combo_right_click {
-            bindings = <&mkp RCLK>;
-            key-positions = <12 23>;  // y m
-        };
-
-        combo_middle_click {
-            bindings = <&mkp MCLK>;
-            key-positions = <14 12 23>;  // c y m
-        };
-
-        combo_back {
-            bindings = <&kp C_AC_BACK>;
-            key-positions = <14 16>;  // c v
-        };
-
-        combo_forward {
-            bindings = <&kp C_AC_FORWARD>;
-            key-positions = <23 24>;  // m x
-        };
-
-    };
 
     macros {
         to_layer_0: to_layer_0 {
