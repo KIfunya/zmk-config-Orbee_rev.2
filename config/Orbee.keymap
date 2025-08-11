@@ -144,7 +144,7 @@
 
         combo_colon {
             key-positions = <4 14>; // . b
-            bindings = <&kp PLUS>; // : in JP keyboard
+            bindings = <&kp SQT>; // : in JP keyboard
         };
 
         combo_underscore {
@@ -159,17 +159,17 @@
 
         combo_equal {
             key-positions = <3 4>; // p .
-            bindings = <&kp CARET>; // = in JP keyboard
+            bindings = <&kp UNDERSCORE>; // = in JP keyboard
         };
 
         combo_plus {
             key-positions = <35 37 24>; // left up down
-            bindings = <&kp TILDE>; // + in JP keyboard
+            bindings = <&kp COLON>; // + in JP keyboard
         };
 
         combo_asterisk {
             key-positions = <23 12 25>; // w e h
-            bindings = <&kp LPAR>; // * in JP keyboard
+            bindings = <&kp DQT>; // * in JP keyboard
         };
 
         combo_caret {
@@ -189,7 +189,7 @@
 
         combo_paren_left {
             key-positions = <5 6>; // f u
-            bindings = <&kp RPAR>; // ( in JP keyboard
+            bindings = <&kp ASTRK>; // ( in JP keyboard
         };
 
         combo_paren_right {
