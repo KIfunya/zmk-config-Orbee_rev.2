@@ -110,15 +110,6 @@
                 key-positions = <5 2 13>;  // r , n
             };
             
-            combo_slash {
-                bindings = <&kp SLASH>;  // /
-                key-positions = <5 2>;  // r ,
-            };
-            
-            combo_backslash {
-                bindings = <&kp BSLH>;  // \
-                key-positions = <2 13>;  // , n
-            };
             
         };
 
