@@ -246,10 +246,10 @@
 
         MOVE {
             bindings = <
-&mt LS(Q) Q  &mt F7 N7  &mt F8 N8  &mt F9 N9  &mt F12 QUESTION                    &trans    &kp PG_UP  &trans   &trans  &trans
-&kp TILDE    &mt F4 N4  &mt F5 N5  &mt F6 N6  &mt F11 N0        &trans    &trans  &kp HOME  &kp PG_DN  &kp END  &trans  &trans
-&kp LS(Z)    &mt F1 N1  &mt F2 N2  &mt F3 N3  &mt F10 EXCL      &trans    &trans  &kp BSPC  &kp DEL    &trans   &trans  &trans
-&trans       &trans     &trans     &trans     &trans            &trans    &trans  &trans                                &trans
+&mt LS(Q) Q  &mt F7 N7         &mt F8 N8  &mt F9 N9          &mt F12 QUESTION                      &kp DEL    &kp PG_UP  &trans     &trans    &trans
+&kp TILDE    &mt F4 N4         &mt F5 N5  &mt F6 N6          &mt F11 N0        &trans    &kp BSPC  &kp HOME   &kp PG_DN  &kp END    &trans    &trans
+&kp LS(Z)    &mt F1 N1         &mt F2 N2  &mt F3 N3          &mt F10 EXCL      &trans    &mkp MB4  &mkp LCLK  &mkp MCLK  &mkp RCLK  &mkp MB5  &trans
+&trans       &kp LC(LG(LEFT))  &trans     &kp LC(LG(RIGHT))  &trans            &trans    &trans    &trans                                     &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
