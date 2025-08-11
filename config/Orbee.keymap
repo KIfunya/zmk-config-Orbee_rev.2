@@ -15,9 +15,39 @@
     combos {
         compatible = "zmk,combos";
 
-        combo_st {
+        combo_sq {
             bindings = <&kp SQT>;
             key-positions = <2 3>;
+        };
+
+        combo_dq {
+            bindings = <&kp DQT>;
+            key-positions = <1 2 3>;
+        };
+
+        combo_grave {
+            bindings = <&kp GRAVE>;
+            key-positions = <3 4>;
+        };
+
+        combo_colon {
+            bindings = <&kp COLON>;
+            key-positions = <4 14>;
+        };
+
+        combo_semicolon {
+            bindings = <&kp SEMI>;
+            key-positions = <2 12>;
+        };
+
+        combo_lclk {
+            bindings = <&mkp LCLK>;
+            key-positions = <29 30>;
+        };
+
+        combo_rclk {
+            bindings = <&mkp RCLK>;
+            key-positions = <31 30>;
         };
     };
 
