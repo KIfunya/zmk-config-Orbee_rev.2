@@ -71,7 +71,7 @@
             };
             
             combo_pipe {
-                bindings = <&pipe>;  // |
+                bindings = <&kp PIPE>;  // |
                 key-positions = <3 13>;  // p n
             };
             
@@ -81,7 +81,7 @@
             };
             
             combo_underscore {
-                bindings = <&under>;  // _
+                bindings = <&kp UNDER>;  // _
                 key-positions = <9 10>;  // h j
             };
             
