@@ -196,6 +196,26 @@
             key-positions = <5 6 7>; // f u d
             bindings = <&kp LPAR>; // ) in JP keyboard
         };
+
+        combo_prcnt {
+            bindings = <&kp PRCNT>;
+            key-positions = <3 29 19>;
+        };
+
+        combo_amps {
+            bindings = <&kp CARET>;
+            key-positions = <10 13 7>;
+        };
+
+        combo_at {
+            bindings = <&kp LBKT>;
+            key-positions = <10 18>;
+        };
+
+        combo_dllr {
+            bindings = <&kp DLLR>;
+            key-positions = <8 1>;
+        };
     };
 
     keymap {
