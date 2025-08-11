@@ -110,7 +110,6 @@
                 key-positions = <5 2 13>;  // r , n
             };
             
-            
         };
 
     macros {
