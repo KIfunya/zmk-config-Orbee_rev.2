@@ -65,10 +65,10 @@
 
         DEFAULT {
             bindings = <
-&kp ESC    &kp L         &trans        &kp P             &trans                                       &kp F        &kp U  &kp D  &kp K  &trans
-&kp A      &kp R         &kp E         &kp N             &kp B             &none          &kp G       &kp S        &kp I  &kp T  &kp O  &trans
-&kp Z      &kp W         &trans        &kp H             &kp J             &lt 4 COLON    &kp V       &kp C        &kp Y  &kp M  &kp X  &trans
-&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &lt 1 INT_HENKAN  &kp INT_MUHENKAN  &kp SPACE      &lt 1 BSPC  &lt 1 ENTER                       &lt 4 DEL
+&kp ESC           &kp L         &trans        &kp P             &trans                                       &kp F        &kp U  &kp D  &kp K  &trans
+&kp A             &kp R         &kp E         &kp N             &kp B             &none          &kp G       &kp S        &kp I  &kp T  &kp O  &trans
+&mt LEFT_SHIFT Z  &kp W         &trans        &kp H             &kp J             &lt 4 COLON    &kp V       &kp C        &kp Y  &kp M  &kp X  &trans
+&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt 1 INT_HENKAN  &kp INT_MUHENKAN  &kp SPACE      &lt 1 BSPC  &lt 1 ENTER                       &lt 4 DEL
             >;
 
             sensor-bindings =
@@ -78,9 +78,9 @@
 
         MOVE {
             bindings = <
-&kp Q        &trans  &trans  &trans  &trans                              &trans     &kp UP    &trans     &trans    &trans
+&mt LS(Q) Q  &trans  &trans  &trans  &trans                              &trans     &kp UP    &trans     &trans    &trans
 &kp LA(TAB)  &trans  &trans  &trans  &trans  &trans            &kp HOME  &kp LEFT   &kp DOWN  &kp RIGHT  &kp END   &trans
-&trans       &trans  &trans  &trans  &trans  &trans            &mkp MB4  &mkp LCLK  &mkp MB3  &mkp RCLK  &mkp MB5  &trans
+&kp LS(Z)    &trans  &trans  &trans  &trans  &trans            &mkp MB4  &mkp LCLK  &mkp MB3  &mkp RCLK  &mkp MB5  &trans
 &trans       &trans  &trans  &trans  &trans  &kp INT_HENKAN    &trans    &trans                                    &trans
             >;
 
