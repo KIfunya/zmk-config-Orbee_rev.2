@@ -13,14 +13,123 @@
 };
 
 / {
-    combos {
-        compatible = "zmk,combos";
-
-        c_d {
-            bindings = <&kp D>;
-            key-positions = <0 10 22 34>;
+        combos {
+            compatible = "zmk,combos";
+            timeout-ms = <50>;
+            require-prior-idle-ms = <30>;
+            
+            // マウス操作
+            combo_left_click {
+                bindings = <&mkp LCLK>;
+                key-positions = <12 14>;  // y c
+            };
+            
+            combo_right_click {
+                bindings = <&mkp RCLK>;
+                key-positions = <12 23>;  // y m
+            };
+            
+            combo_middle_click {
+                bindings = <&mkp MCLK>;
+                key-positions = <14 12 23>;  // c y m
+            };
+            
+            combo_back {
+                bindings = <&kp C_AC_BACK>;
+                key-positions = <14 16>;  // c v
+            };
+            
+            combo_forward {
+                bindings = <&kp C_AC_FORWARD>;
+                key-positions = <23 24>;  // m x
+            };
+            
+            // 記号入力
+            combo_double_quote {
+                bindings = <&kp AT>;  // " (日本語キーボードでは@)
+                key-positions = <1 3>;  // l p
+            };
+            
+            combo_backtick {
+                bindings = <&kp LBRC>;  // ` (日本語キーボードでは{)
+                key-positions = <1 2>;  // l ,
+            };
+            
+            combo_single_quote {
+                bindings = <&kp CARET>;  // ' (日本語キーボードでは&)
+                key-positions = <2 3>;  // , p
+            };
+            
+            combo_hash {
+                bindings = <&kp HASH>;  // #
+                key-positions = <0 1>;  // (Esc) l
+            };
+            
+            combo_semicolon {
+                bindings = <&kp SEMICOLON>;  // ;
+                key-positions = <2 6>;  // , e
+            };
+            
+            combo_pipe {
+                bindings = <&kp PIPE>;  // |
+                key-positions = <3 13>;  // p n
+            };
+            
+            combo_colon {
+                bindings = <&kp PLUS>;  // : (日本語キーボードでは+)
+                key-positions = <4 15>;  // . b
+            };
+            
+            combo_underscore {
+                bindings = <&kp UNDER>;  // _
+                key-positions = <9 10>;  // h j
+            };
+            
+            combo_minus {
+                bindings = <&kp MINUS>;  // -
+                key-positions = <13 15>;  // n b
+            };
+            
+            combo_equal {
+                bindings = <&kp EQUAL>;  // =
+                key-positions = <3 4>;  // p .
+            };
+            
+            combo_plus {
+                bindings = <&kp TILDE>;  // + (日本語キーボードでは~)
+                key-positions = <31 32 33>;  // (left)(up)(down)
+            };
+            
+            combo_asterisk {
+                bindings = <&kp LPAR>;  // * (日本語キーボードでは()
+                key-positions = <11 6 9>;  // w e h
+            };
+            
+            combo_caret {
+                bindings = <&kp EQUAL>;  // ^
+                key-positions = <5 2 13>;  // r , n
+            };
+            
+            combo_slash {
+                bindings = <&kp SLASH>;  // /
+                key-positions = <5 2>;  // r ,
+            };
+            
+            combo_backslash {
+                bindings = <&kp BSLH>;  // \
+                key-positions = <2 13>;  // , n
+            };
+            
+            combo_left_paren {
+                bindings = <&kp ASTRK>;  // ( (日本語キーボードでは*)
+                key-positions = <7 17>;  // f u
+            };
+            
+            combo_right_paren {
+                bindings = <&kp LPAR>;  // ) (日本語キーボードでは()
+                key-positions = <7 17 18>;  // f u d
+            };
         };
-    };
 
     macros {
         to_layer_0: to_layer_0 {
