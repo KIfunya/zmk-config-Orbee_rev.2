@@ -17,7 +17,7 @@
 
         combo_sq {
             bindings = <&kp SQT>;
-            key-positions = <2 3>;
+            key-positions = <2 1>;
         };
 
         combo_dq {
@@ -27,7 +27,7 @@
 
         combo_grave {
             bindings = <&kp GRAVE>;
-            key-positions = <3 4>;
+            key-positions = <3 2>;
         };
 
         combo_colon {
@@ -48,6 +48,41 @@
         combo_rclk {
             bindings = <&mkp RCLK>;
             key-positions = <31 30>;
+        };
+
+        coy {
+            bindings = <&kp UNDER>;
+            key-positions = <26 25>;
+        };
+
+        combo_minus {
+            bindings = <&kp MINUS>;
+            key-positions = <13 14>;
+        };
+
+        combo_caret {
+            bindings = <&kp CARET>;
+            key-positions = <13 2 11>;
+        };
+
+        combo_slash {
+            bindings = <&kp SLASH>;
+            key-positions = <2 11>;
+        };
+
+        combo_bslash {
+            bindings = <&kp BSLH>;
+            key-positions = <2 11>;
+        };
+
+        combo_pipe {
+            bindings = <&kp PIPE>;
+            key-positions = <3 13>;
+        };
+
+        combo_eq {
+            bindings = <&kp EQUAL>;
+            key-positions = <3 4>;
         };
     };
 
