@@ -110,25 +110,7 @@
                 key-positions = <5 2 13>;  // r , n
             };
             
-            combo_slash {
-                bindings = <&kp SLASH>;  // /
-                key-positions = <5 2>;  // r ,
-            };
-            
-            combo_backslash {
-                bindings = <&backslash>;  // \
-                key-positions = <2 13>;  // , n
-            };
-            
-            combo_left_paren {
-                bindings = <&kp ASTRK>;  // ( (日本語キーボードでは*)
-                key-positions = <7 17>;  // f u
-            };
-            
-            combo_right_paren {
-                bindings = <&kp LPAR>;  // ) (日本語キーボードでは()
-                key-positions = <7 17 18>;  // f u d
-            };
+
         };
 
     macros {
