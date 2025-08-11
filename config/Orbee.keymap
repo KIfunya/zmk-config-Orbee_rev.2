@@ -18,7 +18,7 @@
 
         combo_sq {
             bindings = <&kp SQT>;
-            key-positions = <2 1>;
+            key-positions = <2 3>;
         };
 
         combo_dq {
@@ -28,7 +28,7 @@
 
         combo_grave {
             bindings = <&kp GRAVE>;
-            key-positions = <3 2>;
+            key-positions = <2 1>;
         };
 
         combo_colon {
@@ -111,12 +111,14 @@
             bindings = <&kp 0x89>;
             label = "BACKSLASH";
         };
+
         pipe: pipe {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(0x89)>;
             label = "PIPE";
         };
+
         under: under {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -167,10 +169,10 @@
 
         DEFAULT {
             bindings = <
-&kp ESC           &kp L         &kp COMMA     &kp P             &kp DOT                                    &kp F        &kp U  &kp D  &kp K  &trans
-&kp A             &kp R         &kp E         &kp N             &kp B             &none        &kp G       &kp S        &kp I  &kp T  &kp O  &trans
-&mt LEFT_SHIFT Z  &kp W         &trans        &kp H             &kp J             &kp TAB      &kp V       &kp C        &kp Y  &kp M  &kp X  &trans
-&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt 1 INT_HENKAN  &kp INT_MUHENKAN  &kp SPACE    &lt 1 BSPC  &lt 1 ENTER                       &lt 2 DEL
+&kp ESC           &kp L     &kp COMMA  &kp P      &kp DOT                            &kp F        &kp U  &kp D  &kp K  &trans
+&kp A             &kp R     &kp E      &kp N      &kp B     &none        &kp G       &kp S        &kp I  &kp T  &kp O  &kp LBKT
+&mt LEFT_SHIFT Z  &kp W     &kp UP     &kp H      &kp J     &kp TAB      &kp V       &kp C        &kp Y  &kp M  &kp X  &kp RBKT
+&kp LGUI          &kp LEFT  &kp DOWN   &kp RIGHT  &kp LALT  &kp SPACE    &lt 1 BSPC  &lt 1 ENTER                       &kp LCTRL
             >;
 
             sensor-bindings =
@@ -180,10 +182,10 @@
 
         MOVE {
             bindings = <
-&mt LS(Q) Q  &trans  &trans  &kp LBKT  &kp RBKT                              &trans    &kp UP    &trans     &trans   &trans
-&trans       &trans  &trans  &kp LPAR  &kp RPAR  &trans            &kp HOME  &kp LEFT  &kp DOWN  &kp RIGHT  &kp END  &trans
-&kp LS(Z)    &trans  &trans  &trans    &trans    &trans            &trans    &kp BSPC  &kp DEL   &trans     &trans   &trans
-&trans       &trans  &trans  &trans    &trans    &kp INT_HENKAN    &trans    &trans                                  &trans
+&mt LS(Q) Q  &mt F7 N7  &mt F8 N8  &mt F9 N9  &mt F12 QUESTION                    &trans    &kp PG_UP  &trans   &trans  &trans
+&kp TILDE    &mt F4 N4  &mt F5 N5  &mt F6 N6  &mt F11 N0        &trans    &trans  &kp HOME  &kp PG_DN  &kp END  &trans  &trans
+&kp LS(Z)    &mt F1 N1  &mt F2 N2  &mt F3 N3  &mt F10 EXCL      &trans    &trans  &kp BSPC  &kp DEL    &trans   &trans  &trans
+&trans       &trans     &trans     &trans     &trans            &trans    &trans  &trans                                &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
