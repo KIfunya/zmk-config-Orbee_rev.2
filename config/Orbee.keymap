@@ -216,6 +216,16 @@
             bindings = <&kp DLLR>;
             key-positions = <8 1>;
         };
+
+        combo_henkan {
+            bindings = <&kp INT_HENKAN>;
+            key-positions = <40 41>;
+        };
+
+        combo_muhenkan {
+            bindings = <&kp INT_MUHENKAN>;
+            key-positions = <39 40>;
+        };
     };
 
     keymap {
