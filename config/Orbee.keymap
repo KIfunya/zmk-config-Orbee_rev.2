@@ -128,7 +128,7 @@
         };
 
         combo_hash {
-            key-positions = <0 1>; // Esc l
+            key-positions = <0 10>; // Esc l
             bindings = <&kp HASH>;
         };
 
@@ -188,12 +188,12 @@
         };
 
         combo_paren_left {
-            key-positions = <5 6>; // f u
+            key-positions = <0 1>; // f u
             bindings = <&kp ASTRK>; // ( in JP keyboard
         };
 
         combo_paren_right {
-            key-positions = <5 6 7>; // f u d
+            key-positions = <0 1 2>; // f u d
             bindings = <&kp LPAR>; // ) in JP keyboard
         };
 
