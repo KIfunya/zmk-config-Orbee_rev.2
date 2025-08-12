@@ -214,7 +214,7 @@
 
         combo_dllr {
             bindings = <&kp DLLR>;
-            key-positions = <8 1>;
+            key-positions = <1 7>;
         };
 
         combo_henkan {
@@ -248,7 +248,7 @@
             bindings = <
 &mt LS(Q) Q  &trans     &mt F8 N8  &mt F9 N9  &mt F12 QUESTION                                  &mt F7 N7       &mt F8 N8  &mt F9 N9  &mt F12 QMARK  &trans
 &kp TILDE    &mt F4 N4  &mt F5 N5  &mt F6 N6  &mt F11 N0        &trans              &mt F10 N0  &mt F4 N4       &mt F5 N5  &mt F6 N6  &mt F11 EXCL   &trans
-&kp LS(Z)    &mt F1 N1  &kp PG_UP  &mt F3 N3  &mt F10 EXCL      &trans              &trans      &mt F1 N1       &mt F2 N2  &mt F3 N3  &kp TILDE      &trans
+&kp LS(Z)    &mt F1 N1  &kp PG_UP  &mt F3 N3  &mt F10 EXCL      &trans              &kp DEL     &mt F1 N1       &mt F2 N2  &mt F3 N3  &kp TILDE      &trans
 &trans       &kp HOME   &kp PG_DN  &kp END    &trans            &kp INT_MUHENKAN    &trans      &kp INT_HENKAN                                       &trans
             >;
 
