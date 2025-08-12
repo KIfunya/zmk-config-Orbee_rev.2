@@ -86,30 +86,28 @@
         // Mouse controls
 
         combo_left_click {
-            key-positions = <5 6>; // y c
+            key-positions = <5 17>; // y c
             bindings = <&mkp LCLK>;
         };
 
         combo_right_click {
-            key-positions = <7 6>; // y m
+            key-positions = <7 19>; // y m
             bindings = <&mkp RCLK>;
         };
 
         combo_middle_click {
-            key-positions = <5 6 7>; // c y m
+            key-positions = <6 18>; // c y m
             bindings = <&mkp MCLK>;
         };
 
         combo_back {
             key-positions = <5 6>; // c v
             bindings = <&mkp MB4>;
-            layers = <3>;
         };
 
         combo_forward {
             key-positions = <6 7>; // m x
             bindings = <&mkp MB5>;
-            layers = <3>;
         };
 
         // Symbol combos based on default_layer layout
