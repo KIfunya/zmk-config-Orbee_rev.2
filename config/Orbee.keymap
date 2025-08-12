@@ -209,7 +209,7 @@
 
         combo_at {
             bindings = <&kp LBKT>;
-            key-positions = <10 18>;
+            key-positions = <10 19>;
         };
 
         combo_dllr {
