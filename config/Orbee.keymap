@@ -86,28 +86,29 @@
         // Mouse controls
 
         combo_left_click {
-            key-positions = <30 29>; // y c
+            key-positions = <5 6>; // y c
             bindings = <&mkp LCLK>;
         };
 
         combo_right_click {
-            key-positions = <31 30>; // y m
+            key-positions = <7 6>; // y m
             bindings = <&mkp RCLK>;
         };
 
         combo_middle_click {
-            key-positions = <31 30 29>; // c y m
+            key-positions = <5 6 7>; // c y m
             bindings = <&mkp MCLK>;
         };
 
         combo_back {
-            key-positions = <28 29>; // c v
+            key-positions = <5 6>; // c v
             bindings = <&kp C_AC_BACK>;
         };
 
         combo_forward {
-            key-positions = <32 31>; // m x
+            key-positions = <6 7>; // m x
             bindings = <&kp C_AC_FORWARD>;
+            layers = <3>;
         };
 
         // Symbol combos based on default_layer layout
@@ -233,7 +234,7 @@
 
         DEFAULT {
             bindings = <
-&kp ESC           &kp L        &kp COMMA  &kp P      &kp DOT                            &kp F        &kp U  &kp D        &kp K         &sl 2
+&kp ESC           &kp L        &kp COMMA  &kp P      &kp DOT                            &kp F        &kp U  &lt 3 D      &lt 3 K       &sl 2
 &kp A             &kp R        &kp E      &kp N      &kp B     &none        &kp G       &kp S        &kp I  &kp T        &kp O         &kp RIGHT_BRACKET
 &mt LEFT_SHIFT Z  &mt LCTRL W  &kp UP     &kp H      &kp J     &kp TAB      &kp V       &kp C        &kp Y  &mt RCTRL M  &mt LSHIFT X  &kp BSLH
 &kp LGUI          &kp LEFT     &kp DOWN   &kp RIGHT  &kp LALT  &kp SPACE    &lt 1 BSPC  &lt 1 ENTER                                    &kp LCTRL
@@ -246,10 +247,10 @@
 
         MOVE {
             bindings = <
-&mt LS(Q) Q  &mt F7 N7         &mt F8 N8  &mt F9 N9          &mt F12 QUESTION                      &kp DEL    &kp PG_UP  &trans     &trans    &trans
-&kp TILDE    &mt F4 N4         &mt F5 N5  &mt F6 N6          &mt F11 N0        &trans    &kp BSPC  &kp HOME   &kp PG_DN  &kp END    &trans    &trans
-&kp LS(Z)    &mt F1 N1         &mt F2 N2  &mt F3 N3          &mt F10 EXCL      &trans    &mkp MB4  &mkp LCLK  &mkp MCLK  &mkp RCLK  &mkp MB5  &trans
-&trans       &kp LC(LG(LEFT))  &trans     &kp LC(LG(RIGHT))  &trans            &trans    &trans    &trans                                     &trans
+&mt LS(Q) Q  &trans     &mt F8 N8  &mt F9 N9  &mt F12 QUESTION                        &mt F7 N7  &mt F8 N8  &mt F9 N9  &mt F12 QMARK  &trans
+&kp TILDE    &mt F4 N4  &mt F5 N5  &mt F6 N6  &mt F11 N0        &trans    &mt F10 N0  &mt F4 N4  &mt F5 N5  &mt F6 N6  &mt F11 EXCL   &trans
+&kp LS(Z)    &mt F1 N1  &kp PG_UP  &mt F3 N3  &mt F10 EXCL      &trans    &trans      &mt F1 N1  &mt F2 N2  &mt F3 N3  &kp TILDE      &trans
+&trans       &kp HOME   &kp PG_DN  &kp END    &trans            &trans    &trans      &trans                                          &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -261,6 +262,15 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans        &trans        &trans        &trans        &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans        &trans        &trans        &trans        &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                                                  &trans
+            >;
+        };
+
+        MOUSE {
+            bindings = <
+&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &mkp LCLK  &mkp MCLK  &mkp RCLK  &trans  &trans
+&trans        &trans        &trans        &trans        &trans        &trans    &trans  &trans     &trans     &trans     &trans  &trans
+&trans        &trans        &trans        &trans        &trans        &trans    &trans  &trans     &trans     &trans     &trans  &trans
+&trans        &trans        &trans        &trans        &trans        &trans    &trans  &trans                                   &trans
             >;
         };
     };
