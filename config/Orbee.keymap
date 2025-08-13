@@ -41,6 +41,21 @@
             bindings = <&kp LS(0x87)>;
             label = "UNDER";
         };
+
+        JP_on: JP_on {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&to 1 &kp INT_HENKAN>;
+            label = "JP_ON";
+        };
+
+        JP_off: JP_off {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&to 0 &kp INT_MUHENKAN>, <&macro_press>;
+
+            label = "JP_OFF";
+        };
     };
 
     behaviors {
@@ -233,15 +248,24 @@
 
         DEFAULT {
             bindings = <
-&kp ESC           &mt PLUS L   &kp COMMA  &kp P      &kp DOT                            &kp F        &kp U  &lt 3 D      &lt 3 K       &sl 2
+&kp ESC           &mt PLUS L   &kp COMMA  &kp P      &kp DOT                            &kp F        &kp U  &lt 4 D      &lt 4 K       &sl 3
 &kp A             &kp R        &kp E      &kp N      &kp B     &none        &kp G       &kp S        &kp I  &kp T        &kp O         &kp RIGHT_BRACKET
 &mt LEFT_SHIFT Z  &mt LCTRL W  &kp UP     &kp H      &kp J     &kp TAB      &kp V       &kp C        &kp Y  &mt RCTRL M  &mt LSHIFT X  &kp BSLH
-&kp LGUI          &kp LEFT     &kp DOWN   &kp RIGHT  &kp LALT  &kp SPACE    &lt 1 BSPC  &lt 1 ENTER                                    &kp LCTRL
+&kp LGUI          &kp LEFT     &kp DOWN   &kp RIGHT  &kp LALT  &kp SPACE    &lt 2 BSPC  &lt 2 ENTER                                    &kp LCTRL
             >;
 
             sensor-bindings =
                 <&scroll_up_down>,
                 <&inc_dec_kp C_VOL_DN C_VOL_UP>;
+        };
+
+        JP_Arensito {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                          &trans
+            >;
         };
 
         MOVE {
