@@ -65,12 +65,3 @@
     status = "okay";
 };
 
-&trackball {
-    sensor-transform {
-        compatible = "zmk,sensor-transform";
-        rotation = <0 0 0>;       // 軸のズレがないなら 0
-        scale = <1 1.5 1>;        // Y軸だけ感度を上げる
-        offset = <0 0 0>;         // 必要なら微調整
-    };
-};
-
