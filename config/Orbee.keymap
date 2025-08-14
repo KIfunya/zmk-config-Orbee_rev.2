@@ -12,9 +12,9 @@
 #undef MOVE_RIGHT
 
 #define MOVE_UP    MOVE_VERT(-1000)   // 上方向
-#define MOVE_DOWN  MOVE_VERT(4000)    // 下方向
-#define MOVE_LEFT  MOVE_HOR(-800)                 // 左方向だけ速度を抑える
-#define MOVE_RIGHT MOVE_HOR(1000)                 // 右方向だけ速度を増加
+#define MOVE_DOWN  MOVE_VERT(10000)    // 下方向
+#define MOVE_LEFT  MOVE_HOR(-800)     // 左方向だけ速度を抑える
+#define MOVE_RIGHT MOVE_HOR(1000)     // 右方向だけ速度を増加
 
 &mt {
     flavor = "balanced";
