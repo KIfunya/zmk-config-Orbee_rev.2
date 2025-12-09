@@ -73,10 +73,10 @@
 
         main_layer {
             bindings = <
-&kp Q     &kp L       &kp COMMA  &kp P   &kp DOT                              &kp DEL  &kp F  &kp U  &kp D  &kp K
-&kp A     &kp R       &kp E      &kp N   &kp B         &none        &kp LBKT  &kp G    &kp S  &kp I  &kp T  &kp O
-&kp Z     &kp W       &kp TAB    &kp H   &kp J         &kp ESC      &kp RBKT  &kp V    &kp C  &kp Y  &kp M  &kp X
-&kp LWIN  &kp LSHIFT  &kp LCTRL  &trans  &kp LEFT_ALT  &kp SPACE    &kp BSPC  &kp RET                       &trans
+&kp Q         &kp L        &kp COMMA  &kp P   &kp DOT                              &kp DEL  &kp F  &kp U  &kp D  &kp K
+&kp A         &kp R        &kp E      &kp N   &kp B         &none        &kp LBKT  &kp G    &kp S  &kp I  &kp T  &kp O
+&mt LSHIFT Z  &mt LCTRL W  &kp TAB    &kp H   &kp J         &kp ESC      &kp RBKT  &kp V    &kp C  &kp Y  &kp M  &kp X
+&kp LWIN      &kp LSHIFT   &kp LCTRL  &trans  &kp LEFT_ALT  &kp SPACE    &kp BSPC  &kp RET                       &trans
             >;
         };
 
