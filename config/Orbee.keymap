@@ -73,32 +73,19 @@
 
         main_layer {
             bindings = <
-&kp Q         &kp L        &kp COMMA  &kp P   &kp DOT                              &kp DEL  &kp F  &kp U  &kp D  &kp K
+&kp Q         &kp L        &kp COMMA  &kp P   &kp TAB                              &kp DEL  &kp F  &kp U  &kp D  &kp K
 &kp A         &kp R        &kp E      &kp N   &kp B         &none        &kp LBKT  &kp G    &kp S  &kp I  &kp T  &kp O
-&mt LSHIFT Z  &mt LCTRL W  &kp TAB    &kp H   &kp J         &kp ESC      &kp RBKT  &kp V    &kp C  &kp Y  &kp M  &kp X
+&mt LSHIFT Z  &mt LCTRL W  &kp DOT    &kp H   &kp J         &kp ESC      &kp RBKT  &kp V    &kp C  &kp Y  &kp M  &kp X
 &kp LWIN      &kp LSHIFT   &kp LCTRL  &trans  &kp LEFT_ALT  &kp SPACE    &kp BSPC  &kp RET                       &trans
             >;
         };
 
-        default_layer {
+        number {
             bindings = <
-&kp Q             &kp W         &kp E         &kp R             &kp T                                             &kp Y        &kp U  &lt 0 I    &kp O    &kp P
-&kp A             &kp S         &kp D         &kp F             &kp G        &kp EQUAL             &kp MINUS      &kp H        &kp J  &kp K      &kp L    &kp SQT
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V             &kp B        &lt 5 COLON           &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt 2 INT_HENKAN  &lt 3 SPACE  &lt 4 INT_MUHENKAN    &kp BACKSPACE  &lt 2 ENTER                             &kp DEL
-            >;
-
-            sensor-bindings =
-                <&scroll_up_down>,
-                <&inc_dec_kp C_VOL_DN C_VOL_UP>;
-        };
-
-        layer_1 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans                    &kp F1  &kp F2  &kp F3  &kp F4  &kp F5
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &kp F11
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                          &kp F12
+&trans  &trans  &trans  &trans  &trans                    &kp DEL  &kp F2  &kp F3  &kp F4  &kp F5
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &sk DEL  &kp F7  &kp F8  &kp F9  &kp F10
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans   &trans  &trans  &trans  &kp F11
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                           &kp F12
             >;
 
             sensor-bindings = <&scroll_up_down>;
